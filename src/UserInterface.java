@@ -7,7 +7,7 @@ public class UserInterface {
         Scanner sc = new Scanner(System.in);
         VesselUtil util = new VesselUtil();
 
-        System.out.print("Enter the number of vessels to be added");
+        System.out.print("Enter the number of vessels to be added: ");
         int n = Integer.parseInt(sc.nextLine());
 
         System.out.print("Enter vessel details");
@@ -25,7 +25,7 @@ public class UserInterface {
             util.addVesselPerformance(vessel);
         }
 
-        System.out.println("Enter the Vessel Id to check speed");
+        System.out.println("Enter the Vessel Id to check speed: ");
         String searchId = sc.nextLine();
 
         Vessel found = util.getVesselById(searchId);
